@@ -12,16 +12,25 @@ WHITE=`tput setaf 7`
 BOLD=`tput bold`
 RESET=`tput sgr0`
 
-# for macos machines, we need proper OpenSSL...
+# Ensure coreutils are installed for realpath on macOS
+if [ $(uname) == 'Darwin' ]; then
+  if ! command -v realpath &> /dev/null; then
+    echo 'Installing coreutils for realpath...'
+    brew install coreutils
+    export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+  fi
+fi
+
+# for macOS machines, we need proper OpenSSL...
 OPENSSL_VERSION=$(openssl version -v)
 if [[ "${OPENSSL_VERSION}" =~ ^LibreSSL.*$ ]]; then
   echo -e "${RED}ERROR: You may not have a compatible OpenSSL version (${OPENSSL_VERSION}). Please install OpenSSL version 1.0.2q or above.${RESET}"
   if [ $(uname) == 'Darwin' ]; then
-        echo 'OpenSSL is required to build openBalena on macOS. To install with brew, run'
-        echo ''
-        echo '    brew install openssl'
-        echo ''
-    fi
+    echo 'OpenSSL is required to build openBalena on macOS. To install with brew, run'
+    echo ''
+    echo '    brew install openssl'
+    echo ''
+  fi
   exit 1
 fi
 
@@ -37,6 +46,10 @@ BASE_DIR="$(dirname "${DIR}")"
 CONFIG_DIR="${BASE_DIR}/config"
 CERTS_DIR="${CONFIG_DIR}/certs"
 COMPOSE_DIR="${BASE_DIR}/compose"
+
+# Create necessary directories
+mkdir -p "${CERTS_DIR}/root"
+mkdir -p "${CERTS_DIR}/vpn"
 
 DOMAIN=openbalena.local
 
