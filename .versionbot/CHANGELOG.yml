@@ -1,4 +1,127 @@
 - commits:
+    - subject: Update balena/open-balena-vpn Docker tag to v11.30.22
+      hash: 1ea77d38cac6d4de8cee20888c68d0657dc1d9af
+      body: |
+        Update balena/open-balena-vpn from 11.30.9 to 11.30.22
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 4.0.8
+  title: ""
+  date: 2024-05-29T05:57:12.761Z
+- commits:
+    - subject: Update qemux/qemu-docker Docker tag to v4.28
+      hash: 1c3b8dd38fadbf111ebe850d77bdca4f8cd0bb2d
+      body: |
+        Update qemux/qemu-docker from 4.24 to 4.28
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 4.0.7
+  title: ""
+  date: 2024-05-29T04:57:24.252Z
+- commits:
+    - subject: Update balena/open-balena-s3 Docker tag to v2.28.43
+      hash: 9d3b6ccc3f8fe7adb6034dbc6d0e9aaecddb7653
+      body: |
+        Update balena/open-balena-s3 from 2.28.42 to 2.28.43
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 4.0.6
+  title: ""
+  date: 2024-05-29T03:57:53.284Z
+- commits:
+    - subject: Update balena/open-balena-haproxy Docker tag to v4.3.2
+      hash: fbd49bb4092c2fe93d08eb702c81f195e47deb11
+      body: |
+        Update balena/open-balena-haproxy from 4.3.1 to 4.3.2
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 4.0.5
+  title: ""
+  date: 2024-05-29T03:00:18.310Z
+- commits:
+    - subject: Update balena/open-balena-registry Docker tag to v2.39.56
+      hash: 40bf98a26c6c41e7156d413079bc9e297762b515
+      body: |
+        Update balena/open-balena-registry from 2.39.55 to 2.39.56
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 4.0.4
+  title: ""
+  date: 2024-05-29T02:17:23.351Z
+- commits:
+    - subject: Update aws-actions/configure-aws-credentials digest to 43c8912
+      hash: 8e7be03371b77378fb0c06e2cf81da6d939cfb88
+      body: |
+        Update aws-actions/configure-aws-credentials
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 4.0.3
+  title: ""
+  date: 2024-05-29T01:18:08.903Z
+- commits:
+    - subject: Update actions/checkout digest to b80ff79
+      hash: b6e8eaefe9b4c995889bf91a60ef3119951c82ac
+      body: |
+        Update actions/checkout
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 4.0.2
+  title: ""
+  date: 2024-05-28T23:57:25.858Z
+- commits:
+    - subject: Update balena/open-balena-api Docker tag to v22.2.3
+      hash: 4b291b6ec292e6cb4d230ea17f2f1d3799336827
+      body: |
+        Update balena/open-balena-api from 22.2.2 to 22.2.3
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Self-hosted Renovate Bot
+      nested: []
+  version: 4.0.1
+  title: ""
+  date: 2024-05-28T22:58:28.440Z
+- commits:
+    - subject: openBalena 2024
+      hash: 35539999127fc636f06cf59c944af54115f71017
+      body: |
+        * integration/e2e tests
+        * automatic SSL/TLS PKI (wildcard cert.) generation via DNS-01 challenge
+        * update getting started guide
+        * remove unnecessary privileges (Redis)
+        * pin Redis to v7.2 (BSD license)
+        * enable trust proxy
+
+        Co-authored-by: Kyle Harding <kyle@balena.io>
+      footer:
+        change-type: major
+      author: ab77
+      nested: []
+  version: 4.0.0
+  title: ""
+  date: 2024-05-28T21:54:05.118Z
+- commits:
     - subject: Fix typo
       hash: 62afa3a0d14133d6585990a64c224e3856d27b2e
       body: ""
